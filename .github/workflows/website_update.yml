@@ -1,12 +1,11 @@
 name: website_update
 on:
-  push:
   schedule:
     - cron:  '15 1 * * *'
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
 
     steps:
     - uses: actions/checkout@v2
